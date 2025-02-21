@@ -1,0 +1,16 @@
+services:
+  devenv:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+
+    volumes:
+      - ~/.gitconfig:/home/iguana/.gitconfig
+      - .:/home/iguana/fatec-api-4
+
+    restart: always
+
+    ports:
+      - 8080:8080
+      - 3000:3000
+    tty: true

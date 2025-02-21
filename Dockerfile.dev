@@ -1,0 +1,55 @@
+FROM eclipse-temurin:21 as backend
+FROM ubuntu:noble as devenv
+
+# Install Packages
+RUN apt update
+RUN apt upgrade -y
+
+RUN apt install -y sudo zsh nano curl wget git
+
+# Configure Locales
+RUN apt-get install -y locales locales-all
+ENV LC_ALL en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
+
+# Add Java
+ENV JAVA_HOME=/opt/java/openjdk
+COPY --from=eclipse-temurin:21 ${JAVA_HOME} ${JAVA_HOME}
+
+# Add Node
+COPY --from=node:21 /usr/local/bin /usr/local/bin/
+COPY --from=node:21 /usr/local/lib/node_modules /usr/local/lib/node_modules
+COPY --from=node:21 /opt/yarn-v1.22.19 /opt/yarn-v1.22.19
+RUN chmod 755 /usr/local/lib/node_modules
+RUN chmod 755 /opt/yarn-v1.22.19
+RUN chown root:sudo /usr/local/lib/node_modules
+RUN chown root:sudo /opt/yarn-v1.22.19
+
+# Configure SUDO
+ARG USER="iguana"
+RUN echo "${USER} ALL=(ALL:ALL) NOPASSWD: ALL" | tee /etc/sudoers.d/$USER
+
+# Update user
+RUN mv /home/ubuntu /home/$USER
+RUN usermod -l $USER -d /home/$USER ubuntu
+RUN usermod -a -G sudo $USER
+
+RUN groupmod -n $USER ubuntu
+USER $USER
+WORKDIR /home/$USER
+
+# Configure ZSH
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+RUN sed -i 's/robbyrussell/iguana/g' .zshrc
+
+RUN sudo chsh -s $(which zsh) $USER
+COPY --chown=$USER:$USER iguana.zsh-theme .oh-my-zsh/themes/iguana.zsh-theme
+
+# Configure Java
+RUN echo "export PATH=$JAVA_HOME/bin:\$PATH" >> .zshrc
+
+# Add gitmoji
+RUN sudo npm i -g gitmoji-cli
+
+CMD /bin/zsh
