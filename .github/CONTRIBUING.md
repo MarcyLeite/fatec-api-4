@@ -2,7 +2,13 @@
 
 Obrigado por contribuir com Terravision!
 
-## 👨‍💻 Development Environment
+## 📦 Modulos
+
+Você pode encontrar detalhes especificos de como contribuir com cada modulo no prorio repositório do projeto.
+- [Backend](https://github.com/MarcyLeite/fatec-api-4-backend/blob/main/.github/CONTRIBUING.md);
+- [Frontend](https://github.com/MarcyLeite/fatec-api-4-frontend/blob/main/.github/CONTRIBUING.md)
+
+## 👨‍💻 Ambiente de desenvolvimento
 
 Nessa seção, descrevemos detalhes do ambiente de desenvolvimento e como preparar sua maquina para começar a codificar.
 
@@ -24,7 +30,8 @@ Caso queira conectar via terminal, executar `./scripts/connect.sh`.
 
 ### Pull requests
 
-Titulo do pull request deve seguir [FEAT | BUG] `descrição curta da mudança`.
+- PRs devem sempre ser redirecionada para a branch development.
+- Titulo do pull request deve seguir [FEAT | BUG] `descrição curta da mudança`.
 
 Pull requests devem incluir:
 - Descrição do que foi alterado;
