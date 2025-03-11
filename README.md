@@ -69,7 +69,7 @@ Siga as instruções do Contribuiting
 
 ## Tecnologias, Linguagens e Ferramentas usadas
 
-![Tecnologias e Ferramentas utilizadas](https://github.com/user-attachments/assets/958df917-026a-4198-9b36-c8de3cd69e1b)
+![Tecnologias e Ferramentas utilizadas](https://github.com/user-attachments/assets/6100fc6e-5d63-43a0-acb8-72a96eab01b4)
 
 
 ## Design das Telas
@@ -81,6 +81,9 @@ Siga as instruções do Contribuiting
 
 ![ModeloBando API - 4](https://github.com/user-attachments/assets/c33f3a1f-9ab2-4e6e-89aa-3d8b9010e575)
 
+## Padrão dos commits
+
+[Padrão dos commits](https://github.com/user-attachments/files/19184434/Visualizacao.administrador.pdf)
 
 ## Equipe
 
