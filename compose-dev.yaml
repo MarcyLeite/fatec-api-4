@@ -10,7 +10,20 @@ services:
 
     restart: always
 
+    links:
+      - "postgres:database"
+
     ports:
       - 8080:8080
       - 3000:3000
     tty: true
+
+  postgres:
+    image: postgis/postgis
+
+    restart: always
+
+    environment:
+      POSTGRES_DB: terravision
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
