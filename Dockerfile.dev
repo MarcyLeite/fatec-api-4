@@ -6,6 +6,8 @@ RUN apt update
 RUN apt upgrade -y
 
 RUN apt install -y sudo zsh nano curl wget git
+RUN apt install -y iputils-ping
+RUN apt install -y postgresql-client
 
 # Configure Locales
 RUN apt-get install -y locales locales-all
