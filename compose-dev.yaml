@@ -6,6 +6,7 @@ services:
 
     volumes:
       - ~/.gitconfig:/home/iguana/.gitconfig
+      - ~/.ssh:/home/iguana/.ssh
       - .:/home/iguana/fatec-api-4
 
     restart: always
