@@ -28,3 +28,9 @@ services:
       POSTGRES_DB: terravision
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+  
+    volumes:
+    - ./postgres-data:/var/lib/postgresql/data
+
+    ports:
+      - 5433:5432
