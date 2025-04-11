@@ -4,16 +4,15 @@ services:
       context: .
       dockerfile: Dockerfile.dev
       args:
-        - USER_ID=${UID}
-        - GROUP_ID=${GID}
+        - USER_ID=${DUID}
+        - GROUP_ID=${DGID}
 
-    user: "${UID}:${GID}"
+    user: "${DUID}:${DGID}"
 
     volumes:
       - ~/.gitconfig:/home/iguana/.gitconfig
       - ~/.gradle:/home/iguana/.gradle
-      - ~/.vscode-server:/home/iguana/.vscode-server
-      - ~/.vscode/extensions:/home/iguana/.vscode/extensions
+      - ~/.vscode/extensions:/home/iguana/.vscode-server/extensions
       - ~/.ssh:/home/iguana/.ssh
       - .:/home/iguana/fatec-api-4
 
