@@ -50,6 +50,9 @@ WORKDIR /home/$USER
 # Setup VSCode
 RUN mkdir -p .vscode-server/extensions
 
+# Setup Gradle
+RUN mkdir .gradle
+
 # Configure ZSH
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 RUN sed -i 's/robbyrussell/iguana/g' .zshrc
