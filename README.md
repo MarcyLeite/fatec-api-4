@@ -27,6 +27,10 @@ Siga as instruções do Contribuiting
 
 [Contribuiting](https://github.com/MarcyLeite/fatec-api-4/blob/main/.github/CONTRIBUING.md)
 
+### Sprint backlog
+
+[Sprint backlog](https://github.com/MarcyLeite/fatec-api-4/blob/3-us007parent-criar-documenta%C3%A7%C3%A3o-da-sprint-backlog/SpringBacklog.md)
+
 # Requisitos não funcionais
 <ul>
   <li>Fornecer visualização de imagens tiradas de satélites</li>
@@ -53,16 +57,16 @@ Siga as instruções do Contribuiting
 
 | N°  | Sprint   | User Story                                                                                                                                                                                                 | Prioridade | Status |
 |-----|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------|
-| 1   | Sprint 1 | Como um administrador ou consultor, eu quero cadastrar novas fazendas, para que eu possa associar talhões a essas fazendas e iniciar os processos de análise.                                               | Alta       |   Em progresso     |
-| 2   | Sprint 1 | Como um usuário do TerraVision (administrador, consultor ou analista), eu quero uma tela para visualizar os talhões de uma fazenda em mapa, para que eu possa ter uma visão detalhada das áreas cadastradas. | Alta       |    Em progresso    |
-| 3   | Sprint 1 | Como um usuário do TerraVision (administrador, consultor ou analista), eu quero uma tela de visualização dos talhões em lista, para que eu possa ter uma visão detalhada das áreas cadastradas.             | Média      |  Em progresso      |
-| 4   | Sprint 1 | Como um usuário do TerraVision (administrador, consultor ou analista), eu quero visualizar as fazendas em lista, para que eu possa ter uma visão detalhada das áreas cadastradas.                           | Média      |    Em progresso    |
-| 5   | Sprint 1 | Como um administrador ou consultor, eu quero cadastrar novos talhões associados a uma fazenda, para que essas áreas possam ser incluídas nas análises e monitoramentos.                                      | Alta       |  Em progresso      |
-| 6   | Sprint 2 | Como um analista, eu quero analisar, aprovar ou reprovar os talhões dos mapas, para que eu possa garantir a precisão e a qualidade das informações no sistema.                                              | Alta       |   À fazer     |
-| 7   | Sprint 2 | Como um analista, eu quero editar a geometria de um talhão, para que eu possa corrigir erros ou ajustar informações geradas pela IA e garantir a precisão dos dados no sistema.                              | Média      |   À fazer     |
-| 8   | Sprint 2 | Como um consultor, eu quero editar as informações de um talhão, para que eu possa corrigir erros e garantir a precisão dos dados no sistema.                                                                | Média      |   À fazer     |
-| 9   | Sprint 2 | Como um consultor, eu quero editar as informações de uma fazenda, para que eu possa corrigir erros e garantir a precisão dos dados no sistema.                                                              | Média      |   À fazer     |
-| 10  | Sprint 2 | Como administrador, eu quero cadastrar novos usuários, para que eu possa atribuir funções (administrador, consultor ou analista) e garantir que cada usuário tenha acesso às funcionalidades correspondentes. | Baixa      |   À fazer     |
+| 1   | Sprint 1 | Como um administrador ou consultor, eu quero cadastrar novas fazendas, para que eu possa associar talhões a essas fazendas e iniciar os processos de análise.                                               | Alta       |   Finalizada     |
+| 2   | Sprint 1 | Como um usuário do TerraVision (administrador, consultor ou analista), eu quero uma tela para visualizar os talhões de uma fazenda em mapa, para que eu possa ter uma visão detalhada das áreas cadastradas. | Alta       |    Finalizada    |
+| 3   | Sprint 1 | Como um usuário do TerraVision (administrador, consultor ou analista), eu quero uma tela de visualização dos talhões em lista, para que eu possa ter uma visão detalhada das áreas cadastradas.             | Média      |  Finalizada      |
+| 4   | Sprint 1 | Como um usuário do TerraVision (administrador, consultor ou analista), eu quero visualizar as fazendas em lista, para que eu possa ter uma visão detalhada das áreas cadastradas.                           | Média      |    Finalizada    |
+| 5   | Sprint 1 | Como um administrador ou consultor, eu quero cadastrar novos talhões associados a uma fazenda, para que essas áreas possam ser incluídas nas análises e monitoramentos.                                      | Alta       |  Finalizada      |
+| 6   | Sprint 2 | Como um analista, eu quero analisar, aprovar ou reprovar os talhões dos mapas, para que eu possa garantir a precisão e a qualidade das informações no sistema.                                              | Alta       |   Em progresso     |
+| 7   | Sprint 2 | Como um analista, eu quero editar a geometria de um talhão, para que eu possa corrigir erros ou ajustar informações geradas pela IA e garantir a precisão dos dados no sistema.                              | Média      |   Em progresso     |
+| 8   | Sprint 2 | Como um consultor, eu quero editar as informações de um talhão, para que eu possa corrigir erros e garantir a precisão dos dados no sistema.                                                                | Média      |   Em progresso     |
+| 9   | Sprint 2 | Como um consultor, eu quero editar as informações de uma fazenda, para que eu possa corrigir erros e garantir a precisão dos dados no sistema.                                                              | Média      |   Em progresso     |
+| 10  | Sprint 2 | Como administrador, eu quero cadastrar novos usuários, para que eu possa atribuir funções (administrador, consultor ou analista) e garantir que cada usuário tenha acesso às funcionalidades correspondentes. | Baixa      |   Em progresso     |
 | 11  | Sprint 3 | Como um administrador ou consultor, eu quero acessar dashboards de produção dos analistas, para que eu possa acompanhar o desempenho da equipe e a qualidade das análises.                                  | Baixa      |    À fazer    |
 | 12  | Sprint 3 | Como um usuário do TerraVision (administrador, consultor ou analista), eu quero realizar login no sistema, para que eu possa acessar as funcionalidades correspondentes à minha função de forma segura.     | Média      |   À fazer     |
 
@@ -83,7 +87,8 @@ Siga as instruções do Contribuiting
 
 ## Padrão dos commits
 
-[Padrão dos commits](https://github.com/user-attachments/files/19184434/Visualizacao.administrador.pdf)
+[Padrão dos commits](https://github.com/user-attachments/files/19640370/2.Guia.do.Git.API.Mensagens.Commit.2025-1.pdf)
+
 
 ## Equipe
 
@@ -92,5 +97,4 @@ Siga as instruções do Contribuiting
 | Yan Yamim ![Static Badge](https://img.shields.io/badge/Product_owner-blue) ![Static Badge](https://img.shields.io/badge/Dev-black)   | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yan-yamim-185220278/)                  |
 | Matheus Marciano ![Static Badge](https://img.shields.io/badge/Scrum_master-pink) ![Static Badge](https://img.shields.io/badge/Dev-black) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-marciano-leite/)                |
 | Maria Clara Santos ![Static Badge](https://img.shields.io/badge/Dev-black)                                                    | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/c137santos/) |
-| Pedro Henrique Lopes de Souza ![Static Badge](https://img.shields.io/badge/Dev-black)                                                  | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pelopes7/)                    |
 | Marília Borgo ![Static Badge](https://img.shields.io/badge/Dev-black)                                                          | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariliaborgo/)           |
