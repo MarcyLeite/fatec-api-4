@@ -3,4 +3,4 @@
 	url = git@github.com:MarcyLeite/fatec-api-4-backend.git
 [submodule "frontend"]
 	path = frontend
-	url = https://github.com/MarcyLeite/fatec-api-4-frontend
+	url = git@github.com:MarcyLeite/fatec-api-4-frontend.git
