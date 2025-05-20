@@ -41,19 +41,17 @@
 | S1-4 | Como usuário, quero visualizar fazendas em lista paginada                 | Média      | Concluída ✅   | ✅                | ✅            | ✅            | [6] Para o cadastro deve ser informado: nome da fazenda, cultura, produtividade, etc.                    |
 | S1-5 | Como administrador ou consultor, quero cadastrar novos talhões            | Alta       | Concluída ✅   | ✅                | ✅            | ✅            | [6] Para o cadastro deve ser informado: nome da fazenda, cultura, produtividade, etc.                    |
 
-
-
-
 ---
 
-## 🔄 Sprint 2 – Em andamento
+## ✅ Sprint 2 – Finalizada
 
-| ID   | User Story                                                                 | Prioridade | Status         | Backlog Completo | DoR Atendido | DoD Atendido | Requisito Referenciado                                                                                   |
-|------|----------------------------------------------------------------------------|------------|----------------|------------------|--------------|--------------|-----------------------------------------------------------------------------------------------------------|
-| S2-1 | Como analista, quero aprovar ou reprovar talhões com edição de geometrias | Alta       | Em progresso 🔄 | ✅                | ✅            | ❌            | [2] O Analista irá aprovar ou não a área, podendo editá-la se necessário.                                |
-| S2-2 | Como consultor, quero cadastrar novos resultados da IA                     | Alta       | Iniciada 🔄     | ✅                | ✅            | ❌            | [3] O Consultor poderá fazer o cadastro de área no sistema.                                              |
-| S2-3 | Como consultor, quero editar informações da fazenda                        | Média      | Iniciada 🔄     | ✅                | ✅            | ❌            | [6] Para o cadastro deve ser informado: nome da fazenda, cultura, produtividade, etc.                    |
-| S2-4 | Como administrador, quero cadastrar novos usuários                         | Baixa      | Iniciada 🔄     | ✅                | ✅            | ❌            | [4] O Administrador poderá realizar o cadastro de usuários.                                              |
+| ID   | User Story                                                                 | Prioridade | Status        | Backlog Completo | DoR Atendido | DoD Atendido | Requisito Referenciado                                                                                   |
+|------|----------------------------------------------------------------------------|------------|---------------|------------------|--------------|--------------|-----------------------------------------------------------------------------------------------------------|
+| S2-1 | Como analista, quero aprovar ou reprovar talhões com edição de geometrias | Alta       | Concluída ✅   | ✅                | ✅            | ✅            | [2] O Analista irá aprovar ou não a área, podendo editá-la se necessário.                                |
+| S2-2 | Como consultor, quero cadastrar novos resultados da IA                     | Alta       | Concluída ✅   | ✅                | ✅            | ✅            | [3] O Consultor poderá fazer o cadastro de área no sistema.                                              |
+| S2-3 | Como consultor, quero editar informações da fazenda                        | Média      | Concluída ✅   | ✅                | ✅            | ✅            | [6] Para o cadastro deve ser informado: nome da fazenda, cultura, produtividade, etc.                    |
+| S2-4 | Como administrador, quero cadastrar novos usuários                         | Baixa      | Concluída ✅   | ✅                | ✅            | ✅            | [4] O Administrador poderá realizar o cadastro de usuários.                                              |
+
 
 ---
 
