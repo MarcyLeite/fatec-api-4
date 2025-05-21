@@ -20,7 +20,7 @@ O sistema permite o cadastro de fazendas que possuem metadados referentes ao des
 - *Cidade* a qual reside
 - *Estado* o qual pertence
 
-![Exemplo de cadastro de fazenda]()
+![Exemplo de cadastro de fazenda](./assets/cadastro_fazenda.png)
 
 ### 2. Cadastro de Talhões
 
@@ -33,7 +33,7 @@ Além das fazendas, o sistema permite cadastrar talhões associados a fazenda O 
 - Definir o *tipo de solo*
 - Fazer upload do arquivo GeoJson que tem a *geometria* do talhão
 
-![Exemplo de cadastro de talhão]()
+![Exemplo de cadastro de talhão](./assets/cadastro_talhao.png)
 
 ### 3. Cadastro de Resultados
 
@@ -43,7 +43,7 @@ Pode-se também cadastrar novos resultados da IA, para o analista realizar o QA.
 - Associar o resultado a uma fazenda
 - Geometria GeoJson do resultado do talhão
 
-![Exemplo de cadastro de resultado]()
+![Exemplo de cadastro de resultado](./assets/cadastro_resultado.png)
 
 ### 4. Cadastro de Usuários
 Também há o cadastro de novos usuários e atribuir suas funções (administrador, consultor ou analista). é possível:
@@ -52,7 +52,7 @@ Também há o cadastro de novos usuários e atribuir suas funções (administrad
 - Definir a *senha do usuário*.
 - Atribuir a *função do usuário*, se ele será um Administrador, Consultor ou Analista.
 
-![Exemplo de cadastro de usuário]()
+![Exemplo de cadastro de usuário](./assets/cadastro_usuario.png)
 
 ### 5. Tela de login
 
@@ -62,7 +62,7 @@ O *TerraVision* oferece uma tela de login onde é possível acessar seu respecti
 - Campo para preencher *senha*.
 - Botão de validação de credenciais.
 
-![Exemplo da tela de login]()
+![Exemplo da tela de login](./assets/tela_login.png)
 
 ### 6. Edição de geometria
 
@@ -73,7 +73,7 @@ O *TerraVision* um campo exclusivo para a edição das geometrias dos resultados
 - Botão de *aprovação* de edição.
 - Botão de *reprovação* de edição.
 
-![Exemplo da tela de edição]()
+![Exemplo da tela de edição](./assets/edicao_geometria.png)
 
 ## Processos de Uso
 ## 1. **Cadastro de Fazenda**
