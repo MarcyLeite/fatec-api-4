@@ -55,15 +55,14 @@
 
 ---
 
-## 🚀 Sprint 3 – Planejada
+## 🔄 Sprint 3 – Em andamento
 
-| ID   | User Story                                                                  | Prioridade | Status     | Backlog Completo | DoR Atendido | DoD Atendido | Requisito Referenciado                                                                                   |
-|------|-----------------------------------------------------------------------------|------------|------------|------------------|--------------|--------------|-----------------------------------------------------------------------------------------------------------|
-| S3-1 | Como usuário, quero fazer upload de arquivo .geojson                       | Alta       | Planejada  | ✅                | ✅            | ❌            | [5] Cadastro de geometria via upload de arquivo .geojson.                                                |
-| S3-2 | Como usuário, quero informar cultura, produtividade e tipo de solo         | Alta       | Planejada  | ✅                | ✅            | ❌            | [6] Para o cadastro deve ser informado: nome da fazenda, cultura, produtividade, tipo de solo, etc.     |
-| S3-3 | Como consultor ou administrador, quero visualizar dashboards com filtros   | Alta       | Planejada  | ✅                | ✅            | ❌            | [7] Dashboards deverão apresentar informações a partir de filtros e destacar áreas no mapa.              |
-| S3-4 | Como consultor, quero filtrar dados no dashboard por cultura e produtividade | Média    | Planejada  | ✅                | ✅            | ❌            | [7] Dashboards deverão apresentar informações a partir de filtros e destacar áreas no mapa.              |
-
+| ID   | User Story                                                                    | Prioridade | Status     | Backlog Completo | DoR Atendido | DoD Atendido | Requisito Referenciado                                                                                   |
+|------|--------------------------------------------------------------------------------|------------|------------|------------------|--------------|--------------|-----------------------------------------------------------------------------------------------------------|
+| S3-1 | Como usuário, quero fazer upload de arquivo .geojson                          | Alta       | 🔄 Iniciada | ✅                | ✅            | ❌            | [5] Cadastro de geometria via upload de arquivo .geojson.                                                |
+| S3-2 | Como usuário, quero informar cultura, produtividade e tipo de solo            | Alta       | 🔄 Iniciada | ✅                | ✅            | ❌            | [6] Para o cadastro deve ser informado: nome da fazenda, cultura, produtividade, tipo de solo, etc.     |
+| S3-3 | Como consultor ou administrador, quero visualizar dashboards com filtros      | Alta       | 🔄 Iniciada | ✅                | ✅            | ❌            | [7] Dashboards deverão apresentar informações a partir de filtros e destacar áreas no mapa.              |
+| S3-4 | Como consultor, quero filtrar dados no dashboard por cultura e produtividade  | Média      | 🔄 Iniciada | ✅                | ✅            | ❌            | [7] Dashboards deverão apresentar informações a partir de filtros e destacar áreas no mapa.              |
 
 
 ## 📌 Legenda de Status
