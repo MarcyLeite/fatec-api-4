@@ -27,10 +27,6 @@ Siga as instruções do Contribuiting
 
 [Contribuiting](https://github.com/MarcyLeite/fatec-api-4/blob/main/.github/CONTRIBUING.md)
 
-### Sprint backlog
-
-[Sprint backlog](https://github.com/MarcyLeite/fatec-api-4/blob/3-us007parent-criar-documenta%C3%A7%C3%A3o-da-sprint-backlog/SpringBacklog.md)
-
 # Requisitos não funcionais
 <ul>
   <li>Fornecer visualização de imagens tiradas de satélites</li>
