@@ -1,0 +1,7 @@
+{
+    "backup_date": "2025-05-23T21:17:06Z",
+    "backup_version": "1.0",
+    "metabase_version": "0.48.4",
+    "project": "terravision",
+    "description": "Backup automático dos dashboards e configurações do Metabase"
+}
