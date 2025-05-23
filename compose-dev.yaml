@@ -1,36 +1,124 @@
+version: '3.8'
+
 services:
   devenv:
     build:
       context: .
       dockerfile: Dockerfile.dev
-
     volumes:
       - ~/.gitconfig:/home/iguana/.gitconfig
       - ~/.ssh:/home/iguana/.ssh
       - .:/home/iguana/fatec-api-4
-
     restart: always
-
-    links:
-      - "postgres:database"
-
+    depends_on:
+      - postgres
     ports:
       - 8080:8080
       - 3000:3000
     tty: true
+    networks:
+      - app_net
 
+  # Banco principal da aplicação
   postgres:
-    image: postgis/postgis
-
+    image: postgis/postgis:15-3.3
     restart: always
-
     environment:
       POSTGRES_DB: terravision
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-  
     volumes:
-    - ./postgres-data:/var/lib/postgresql/data
-
+      - ./postgres-data:/var/lib/postgresql/data
     ports:
       - 5433:5432
+    healthcheck: 
+      test: ["CMD-SHELL", "pg_isready -U postgres -d terravision"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - app_net
+
+  # Banco separado para o Metabase
+  metabase-db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_DB: metabase
+      POSTGRES_USER: metabase
+      POSTGRES_PASSWORD: metabase_secure_pass
+    volumes:
+      - metabase_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U metabase -d metabase"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - metabase_net
+
+  metabase:
+    image: metabase/metabase:v0.48.4
+    depends_on:
+      metabase-db:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    environment:
+      # Configuração do banco interno do Metabase
+      MB_DB_TYPE: postgres
+      MB_DB_DBNAME: metabase
+      MB_DB_HOST: metabase-db
+      MB_DB_PORT: 5432
+      MB_DB_USER: metabase
+      MB_DB_PASS: metabase_secure_pass
+      
+      # Configurações de inicialização automática
+      MB_SITE_NAME: "Terravision Analytics"
+      MB_SITE_LOCALE: pt_BR
+      MB_ADMIN_EMAIL: admin@terravision.local
+      MB_ADMIN_FIRST_NAME: Admin
+      MB_ADMIN_LAST_NAME: Terravision
+      MB_ADMIN_PASSWORD: terravision_admin_2024
+      
+      # Configuração automática da conexão com banco da aplicação
+      MB_SETUP_TOKEN: your_setup_token_here_change_me
+      
+      # Outras configurações úteis
+      JAVA_OPTS: "-Xmx2g"
+      MB_JETTY_HOST: 0.0.0.0
+      MB_JETTY_PORT: 3000
+      
+    ports:
+      - "3001:3000"
+    volumes:
+      - mb_data:/metabase-data
+      - ./metabase-setup:/metabase-setup:ro
+    networks:
+      - metabase_net
+      - app_net  # Para acessar o banco da aplicação
+
+  # Serviço auxiliar para configuração automática (opcional)
+  metabase-setup:
+    image: curlimages/curl:8.4.0
+    depends_on:
+      - metabase
+    volumes:
+      - ./metabase-setup:/scripts:ro
+    networks:
+      - metabase_net
+    command: >
+      sh -c "
+        echo 'Aguardando Metabase iniciar...' &&
+        sleep 30 &&
+        /scripts/setup-metabase.sh
+      "
+    restart: "no"
+
+volumes:
+  mb_data:
+  metabase_db_data:
+
+networks:
+  app_net:
+  metabase_net:
